@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            height:50px;
+            width:100%;
+            background-color: rgb(228, 227, 227);
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .header img{
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+        span{ 
+           height:30px; 
+           padding: 14px;
+           font-size: 20px;
+           font-weight: bold;   
+        }
+        img{
+            height:35px;
+            width:40px;
+        }
+        .pic{
+            height:600px;
+            width:600px;
+        }
+        .part1{
+            display: flex;
+        }
+        .text{
+            background-color: rgb(5, 4, 4);
+            color:white;
+            text-align: center;
+            font-size: 50px;
+            height:600px;
+            width:700px;
+            font-family: arial;
+            font-weight: 600;
+        }
+        .text span{
+            color: red;
+            font-size: 50px;     
+        }
+        .text1{
+            font-size: 20px;
+        }
+        .text1 span{
+            font-size: 20px;
+            text-decoration-line: underline;
+        }
+        .text2{
+            border: 2px solid white;
+            border-radius: 35px;
+            margin-top: 40px;
+            padding-top:5px;
+            padding-bottom: 5px;
+            margin-left: 240px;
+            width:200px;
+            font-size: 15px;
+        }
+        .child1{
+            background-color: rgb(255, 123, 0);
+            height:200px;
+            width:97.5vw;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+        }
+        .child2{
+            background-color: rgb(205, 205, 205);
+            height:900px;
+            width:100%;
+            display: flex;
+        }
+        h4{
+            font-family: arial;
+        }
+        .card1{
+            height:180px;
+            width:190px;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 110px;
+            text-align: center;
+            padding: 10px;    
+        }
+        .card2{
+            height:180px;
+            width:190px;
+            background-color: white;
+            border-radius: 20px;
+            margin-left: 40px;
+            margin-top: 110px;
+            text-align: center;
+            padding: 10px;    
+        }
+        .card3{
+            height:180px;
+            width:190px;
+            background-color: white;
+            border-radius: 20px;
+            margin-left: 40px;
+            margin-top: 110px;
+            text-align: center;
+            padding: 10px;    
+        }
+        .card4{
+            height:180px;
+            width:190px;
+            background-color: white;
+            border-radius: 20px;
+            margin-left: 40px;
+            margin-top: 110px;
+            text-align: center;
+            padding: 10px;    
+        }
+        .card4 p{
+            color:rgb(255, 128, 0);
+            text-decoration-line: underline;
+        }
+        .touch{
+            height:200px;
+            width:550px;
+            color:black;
+            z-index: 1;
+            margin-top: 430px;
+            margin-left:70px;
+           }
+          
+           /* .l1{
+            margin-left:30px;
+           }
+           .l2{
+            margin-left:60px;
+           } */
+           .touch span{
+            font-size: 40px;
+            font-family:arial ;
+           }
+           .touch p{
+            font-size: 18px;
+            padding-left:20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 600;
+           }
+           .touch div{
+            font-size:16px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left:18px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+           }
+           .icons img{
+            padding:10px;
+           }
+           .mes{
+            height:250px;
+            width:420px;
+            z-index: 1;
+            margin-top:34%;
+            margin-left: 80px;
+           }
+           .mail{
+            display:flex;  
+            
+           }
+           label{
+            padding-right: 210px;
+           }
+           .enter{
+            display: flex;
+            justify-content: space-between;
+            height:30px;
+            /* border-bottom: 2px solid black; */
+           }
+           .message{
+            margin-top: 30px;
+           }
+           .submit{
+            background-color: red;
+            border-radius: 50px;
+            height: 30px;
+            width:420px;
+            color:white;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 30px;
+           }
+           .footer{
+            height:160px;
+            width:97.5vw;
+            background-color: black;
+            z-index: 1;
+            color: white;
+            padding-top: 10px;
+            text-align: center;
+           }
+           .foot p{
+             color: red;
+             text-decoration-line: underline ;
+             padding-top: 60px;
+           }
+           .foot span{
+            color:rgb(11, 11, 11);
+            text-decoration-line:underline;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+           }
+           .text1 span:hover{
+            color: white;
+
+           }
+           .text2:hover{
+            background-color: white;
+            color:black;
+           }
+           .submit:hover{
+            background-color: black;
+           }
+           .foot p:hover{
+            color: cornsilk;
+           }
+           .foot span{
+            color: white;
+            text-decoration-color: black;
+           }
+           /* .footer{
+            height:100px;
+            width:97.5vw;
+            background-color: black;
+           }
+           .footer p{
+             text-align: center;
+             color:white;
+             margin-top: 0px;
+             font-family: arial;
+             padding-top: 10px;
+             padding-left:32%;
+             padding-right: 32%;
+           }
+           .foot {
+            color:white;
+            padding-bottom: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+           }
+           .foot span{
+            padding-bottom: 5px;
+            color:red;
+            text-decoration: underline;
+           }
+              */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>Logo</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png">
+    </div>
+    <div class="part1">
+        <img class="pic" src="https://t3.ftcdn.net/jpg/04/75/61/66/360_F_475616692_xk5LXk9qnSpUXfAtuQ9lu0ZklH2l6GpK.jpg">
+        <div class="text">
+            <p>Starting a new<br>project or want<br>to collaborate<br>with us?<span>Let's<br>talk!</span></p>
+            <div class="text1">Image from<span>Freepik</span></div>
+            <div class="text2">READ MORE</div>
+        </div>
+    </div>
+    <div class="part2">
+        <div class="child1">
+            <div class="card1">
+                <img class="location" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4zyr_ZT6EqybV7VMhNIq3PPmlvv4Ig9oOw&s">
+                <h4>OUR MAIN OFFICE</h4>
+                <p>SoHo 94 Broadway St New York,Ny 1001</p>
+            </div>
+            <div class="card2">
+                <img class="phone" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE6p83NyPSmhsT8XvZ6Ysodmd0F8bUQoaROg&s">
+                <h4>PHONE NUMBER</h4>
+                <p>234-98667-8745<br>888-0123-4567(Toll Free)</p>
+            </div>
+            <div class="card3">
+                <img class="Fax" src="https://icon2.cleanpng.com/20180716/afb/52b8404b5c3dd4d04f2ac6ae633c2f3c.webp">
+                <h4>FAX</h4>
+                <p>1-234-567-8900</p>
+            </div>
+            <div class="card4">
+                <img class="Email" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUgdvQHmSzeSfw88qe9qyLyIbvzoAnKVZvQ&s">
+                <h4>EMAIL</h4>
+                <p>hello@theme.com</p>
+            </div>                
+       </div>
+        <div class="child2">
+            <div class="touch">
+                <span>Get in touch</span>
+                <p>WE CAN ENSURE RELIABILITY,LOW COST FARES AND MOST IMPORTANT, WITH SAFETY AND COMFORT IN MIND.</p>
+                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim porro, odit inventore officiis ipsum sapiente non saepe, libero eaque corporis hic dolore voluptatum ipsam! Dolores reiciendis numquam aperiam a expedita.
+                </div>
+                <div class="icons">
+                    <img src="https://pixsector.com/cache/c2d6c2a1/av580aef89b415365fb9c.png">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-icon.png">
+                    <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png">
+                    <img src="https://www.iconpacks.net/icons/1/free-linkedin-icon-112-thumb.png">
+                </div>
+            </div>
+             <div class="mes">
+                <div class="mail">
+                    <label for="">Email</label>
+                    <label for="">Name</label></div>
+                <div class="enter">
+                    <input type="text" name="" placeholder="Enter your Email">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="message">
+                    <label for="">Message</label><br>
+                    <input type="text" name="" placeholder="Enter your message" style="height:100px;  width:415px;">
+                </div>
+                <div class="submit">Submit</div>
+            </div>
+          
+    </div>
+    <div class="footer">
+        <p>Sample text,Click to select the text box.click again or double click to start editing the text.</p>
+         <div class="foot">
+        <p>Free Website Templates<span>created with</span>Offline Website Builder.</p>
+         </div>
+    </div>
+
+</body>
+</html>
